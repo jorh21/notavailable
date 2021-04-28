@@ -1,0 +1,76 @@
+<div class="container">
+
+<div class="atrizes" data-site="Juliana Paes">
+    <a href="https://aenhance.blogspot.com/2020/12/juliana-paes.html"><img src="https://1.bp.blogspot.com/-OacTWvAVHQg/YAnTvPOWl1I/AAAAAAAAAug/D8FdFJP9ZqsMqtQHaeEWt-jAbVfJ9mAMgCLcBGAsYHQ/w320-h220/Juliana%2BPaes.jpg"/>
+    <span class="caption">Juliana Paes</span></a>
+    <div align="center" class="wpac-rating" data-wpac-chan="product_id_1"></div>
+</div>
+
+<div class="atrizes" data-site="Bruna Linzmeyer">
+   <a href="https://aenhance.blogspot.com/2020/12/bruna-linzmeyer.html"> <img src="https://1.bp.blogspot.com/-2s-fAvv09dM/YAnT0UdGkCI/AAAAAAAAAuk/xWxRT74sg9gelqbIR5yhqmn6mUpk-AOiACLcBGAsYHQ/s320/Bruna%2BLinz.jpg"/>
+   <span class="caption">Bruna Linzmeyer</span></a>
+   <div align="center" class="wpac-rating" data-wpac-chan="product_id_2"></div>
+</div>
+
+<div class="atrizes" data-site="Emanuelle Araujo">
+<a href="https://aenhance.blogspot.com/2020/12/emanuelle-araujo.html">
+    <img src="https://1.bp.blogspot.com/-tY7ib9opxZk/YAnT_TyJxSI/AAAAAAAAAuo/ZKQfjfZen_EY65QFcrQzaWlwubmzxmkkgCLcBGAsYHQ/s320/Emanuelle%2Braujo.jpg"/>
+    <span class="caption">Emanuelle Araujo</span></a>
+    <div align="center" class="wpac-rating" data-wpac-chan="product_id_3"></div>
+</div>
+
+<div class="atrizes" data-site="Suzana Pires">
+<a href="https://aenhance.blogspot.com/2020/12/suzana-pires.html">
+    <img src="https://1.bp.blogspot.com/-J6VHnZxFwQ8/YAnVL6LTUpI/AAAAAAAAAu4/7tfzJPJPUVEvhryz4BBeEHGlUi0CVnQ6ACLcBGAsYHQ/s320/Suzana%2BPires.jpg"/>
+    <span class="caption">Suzana Pires</span>
+    <div align="center" class="wpac-rating" data-wpac-chan="product_id_4"></div>
+    </a>
+</div>
+
+<div class="atrizes" data-site="Leona Cavalli">
+<a href="https://aenhance.blogspot.com/2020/12/suzana-pires.html">
+    <img src="https://1.bp.blogspot.com/-fF_38J41yXE/YAnVYMSpokI/AAAAAAAAAu8/kmvzj131xUEawRbx4fgi1pGfMh3bqhU_gCLcBGAsYHQ/s320/Leona%2BCavalli.jpg"/>
+    <span class="caption">Leona Cavalli</span>
+    <div align="center" class="wpac-rating" data-wpac-chan="product_id_5"></div>
+    </a>
+</div>
+
+
+</div>
+
+
+
+
+
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script>
+var alphabeticallyOrderedDivs = $('.atrizes').sort(function(a, b) {
+    return String.prototype.localeCompare.call($(a).data('site').toLowerCase(), $(b).data('site').toLowerCase());
+});
+
+var container = $(".container");
+container.detach().empty().append(alphabeticallyOrderedDivs);
+$('body').append(container);
+</script>
+
+<style>
+div.atrizes {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 20%;
+    margin: 0 4px;
+    min-width: 120px;
+}
+img {
+  width: 100%;
+    background-color: grey;
+}
+.caption {
+    display: block;
+     color: #fcff01;
+   
+}
+</style>
